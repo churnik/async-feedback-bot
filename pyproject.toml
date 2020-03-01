@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "lunch_bot"
+version = "0.0.1"
+description = "Bot for suggestions where to lunch"
+authors = ["Nikita Churikov <nikita@chur.ru>"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+flask = "^1.1"
+loguru = "^0.4.1"
+environs = "^7.1.0"
+pymongo = "^3.10.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+pylint = "^2.4.4"
+
+[tool.black]
+line-length = 100
+target_version = ["py37"]
+
+[build-system]
+requires = ["poetry==1.*"]
+build-backend = "poetry.masonry.api"
